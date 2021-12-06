@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body class="page-body">
@@ -11,7 +12,7 @@
         <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-img" src="img/logo-white.svg" width="74" height="23" alt="логотип сайта">
         </a>
-        <nav class="main-navigation page-header__navigation">
+        <nav class="main-navigation page-header__navigation main-navigation--close">
             <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-navigation__list">
                 <li class="main-navigation__item">
@@ -21,7 +22,7 @@
                     <a class="main-navigation__link" href="catalog.html">Фотографии</a>
                 </li>
                 <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="">Конкурс</a>
+                    <a class="main-navigation__link" href="form.html">Конкурс</a>
                 </li>
                 <li class="main-navigation__item">
                     <a class="main-navigation__link" href="htmlacademy.ru">Html academy</a>
@@ -56,79 +57,100 @@
                 </ul>
             </fieldset>
             <fieldset class="form-competition__checkboxes-radio checkboxes-radio">
-                <legend class="checkboxes-radio__legend">Ваши безбашенные достижения в путешествии</legend>
-                <label class="checkboxes-radio__label" id="selfie">
+                <span><legend class="checkboxes-radio__legend">Ваши безбашенные достижения в путешествии</legend></span>
+                <ul class="checkboxes-radio__list">
+                    <li class="checkboxes-radio__item">
+                        <label class="checkboxes-radio__label" id="selfie">
                   <input class="visually-hidden checkboxes-radio__input" type="checkbox" name="selfie" checked>
                   <span class="checkboxes-radio__checkmark"></span>
                   <span class="checkboxes-radio__caption">Сделал селфи с акулой</span>
                 </label>
-                <label class="checkboxes-radio__label" id="beach">
+                    </li>
+                    <li class="checkboxes-radio__item">
+                        <label class="checkboxes-radio__label" id="beach">
                   <input class="visually-hidden checkboxes-radio__input" type="checkbox" name="beach" checked>
                   <span class="checkboxes-radio__checkmark"></span>
                   <span class="checkboxes-radio__caption">Обгорел на пляже</span>
                 </label>
-                <label class="checkboxes-radio__label" id="chack">
+                    </li>
+                    <li class="checkboxes-radio__item">
+                        <label class="checkboxes-radio__label" id="chack">
                   <input class="visually-hidden checkboxes-radio__input" type="checkbox" name="chack">
                   <span class="checkboxes-radio__checkmark"></span>
                   <span class="checkboxes-radio__caption">Видел Чака Норриса</span>
                 </label>
-                <label class="checkboxes-radio__label" id="suvenir">
+                    </li>
+                    <li class="checkboxes-radio__item">
+                        <label class="checkboxes-radio__label" id="suvenir">
                   <input class="visually-hidden checkboxes-radio__input" type="checkbox" name="suvenir">
                   <span class="checkboxes-radio__checkmark"></span>
                   <span class="checkboxes-radio__caption">Накупил сувениров</span>
                 </label>
-                <label class="checkboxes-radio__label" id="tower">
+                    </li>
+                    <li class="checkboxes-radio__item">
+                        <label class="checkboxes-radio__label" id="tower">
                   <input class="visually-hidden checkboxes-radio__input" type="checkbox" name="tower" checked>
                   <span class="checkboxes-radio__checkmark"></span>
                   <span class="checkboxes-radio__caption">Удержал башню</span>
                 </label>
-                <label class="checkboxes-radio__label" id="hotel">
+                    </li>
+                    <li class="checkboxes-radio__item">
+                        <label class="checkboxes-radio__label" id="hotel">
                   <input class="visually-hidden checkboxes-radio__input" type="checkbox" name="hotel">
                   <span class="checkboxes-radio__checkmark"></span>
                   <span class="checkboxes-radio__caption">Разгромил отель</span>
                 </label>
+                    </li>
+                </ul>
             </fieldset>
             <fieldset class="form-competition__data text-data">
                 <label class="visually-hidden">контактная информация</label>
-                <ul class="text-data-form__list">
+                <ul class="text-data__list">
                     <li class="text-data-form__item">
-                        <label class="text-data__label" id="telephone">
+                        <label class="text-data__label" id="telephone">номер телефона
                     <input class="text-data__input" name="telephone" type="text" placeholder="Номер, пожалуйста" pattern="\(\d{3}\) \d{3}-\d{2}-\d{2}">
                   </label>
                     </li>
-                    <li class="text-data__list">
-                        <label class="text-data__label" id="email">
+                    <li class="text-data__item">
+                        <label class="text-data__label" id="email">адрес почты
                     <input class="text-data__input" name="email" type="email" placeholder="Введите почту *"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                   </label>
                     </li>
                 </ul>
             </fieldset>
             <fieldset class="form-competition__checkboxes-radio checkboxes-radio checkboxes-radio--radio">
-                <legend class="checkboxes-radio__legend">С каким приложением путешествовали?</legend>
-                <label class="checkboxes-radio__label" id="ios">
+                <span><legend class="checkboxes-radio__legend">С каким приложением путешествовали?</legend></span>
+                <ul class="checkboxes-radio__list">
+                    <li class="checkboxes-radio__item">
+                        <label class="checkboxes-radio__label" id="ios">
                 <input class="visually-hidden checkboxes-radio__input" type="radio" name="ios" checked>
                 <span class="checkboxes-radio__checkmark"></span>
                 <span class="checkboxes-radio__caption">Pink для iOS</span>
               </label>
-                <label class="checkboxes-radio__label" id="android">
+                    </li>
+                    <li class="checkboxes-radio__item">
+                        <label class="checkboxes-radio__label" id="android">
                 <input class="visually-hidden checkboxes-radio__input" type="radio" name="android">
                 <span class="checkboxes-radio__checkmark"></span>
                 <span class="checkboxes-radio__caption">Pink на Android</span>
               </label>
-                <label class="checkboxes-radio__label" id="windows">
+                    </li>
+                    <li class="checkboxes-radio__item">
+                        <label class="checkboxes-radio__label" id="windows">
                 <input class="visually-hidden checkboxes-radio__input" type="radio" name="windows">
                 <span class="checkboxes-radio__checkmark"></span>
                 <span class="checkboxes-radio__caption">Windows Phone</span>
               </label>
+                    </li>
+                </ul>
             </fieldset>
             <fieldset class="form-competition__comments comments-form">
                 <legend class="visually-hidden">комментарии</legend>
                 <label class="comments-form__title" id="comment">опишите свои эмоции</label>
-                <textarea class="comments-form__text" name="comment" rows="9" cols="23" placeholder="Можно прям в красках, не стесняясь в выражениях">
-            </textarea>
+                <textarea class="comments-form__text" name="comment" rows="9" cols="23" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <button class="form-competition__button button-form" type="submit">отправить форму</button>
-            <p class="form-competition__footnote">* — обязательные поля</p>
+            <p class="form-competition__footnote"><span>*</span> — обязательные поля</p>
         </form>
 
     </main>
@@ -172,9 +194,6 @@
             </a>
         </div>
     </footer>
-
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
 
 </body>
 
