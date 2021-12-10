@@ -1,50 +1,57 @@
 .best-photo {
   position: relative;
-  color: #283645;
+  color: @text-slim;
 }
+
 .best-photo__title {
   position: absolute;
   display: block;
   top:0;
   left: 209px;
-  background-color:#D22856;
+  background-color: @red-on-page;
   font-weight: bold;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: @white-on-page;
 }
+
 .best-photo__container-description {
-  background-color: #f2f2f2;
+  background-color: @background-grey;
 }
+
 .best-photo__name {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
 }
+
 .best-photo__time {
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
 }
+
 .best-photo__img-description {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 }
+
 .best-photo__rating {
   position: relative;
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #D22856;
+  color: @red-on-page;
   margin-left: 48px;
 }
+
 .best-photo__rating::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: -25px;
   background-image: url("/img/heart.svg");

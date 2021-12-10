@@ -1,16 +1,12 @@
-.page-header {
+.page-header--navigation-close {
   background-image: url("/img/back-mobile.jpg");
-  background-color: #283645;
+  background-color: @text-slim;
   background-repeat: no-repeat;
   background-position: 100%;
   opacity: 0.3;
-  &__navigation{
-    display:none;
-  }
 }
-.page-header--navigation-open{
-  background-color: #283645;
-  &__block {
-    display: block;
-  }
+
+.page-header--navigation-open {
+  background-color: @text-slim;
+  opacity: 1;
 }

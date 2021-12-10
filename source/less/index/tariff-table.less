@@ -1,48 +1,54 @@
-.tariff-table__header{
-  background-color: #283645;
-  color: #ffffff;
+.tariff-table__header {
+  background-color: @text-slim;
+  color: @white-on-page;
 }
-.tariff-table__header-item{
+
+.tariff-table__header-item {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
 }
-.tariff-table__header-item span{
+
+.tariff-table__header-item span {
   font-weight: bold;
   font-size: 16px;
 }
-.tariff-table__header-item--empty{
-  background-color: #f2f2f2;
+
+.tariff-table__header-item--empty {
+  background-color: @background-grey;
   display: none;
 }
-.tariff-table__cell{
+
+.tariff-table__cell {
   position: relative;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   align-items: center;
   text-transform: uppercase;
-  color: #283645;
+  color: @text-slim;
 }
+
 .tariff-table__cell--empty {
   display: none;
 }
+
 .tariff-table__cell--on::after {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url("/img/yes.svg");
   background-repeat: no-repeat;
   width: 31px;
   height: 21px;
 }
+
 .tariff-table__cell--off::after {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url("/img/no.svg");
   background-repeat: no-repeat;
   width: 27px;
   height: 27px;
 }
-
