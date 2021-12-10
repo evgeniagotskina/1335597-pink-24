@@ -1,0 +1,19 @@
+.tariff {
+  background-color: @background-grey;
+  position: relative;
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+.tariff::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: -290px;
+  width: 1214px;
+  height: 74px;
+  background-color: @background-grey;
+  transform: translateY(-100%);
+  background-image: linear-gradient(to top left, @background-grey 50%, rgba(255, 0, 0, 0) 1%);
+}

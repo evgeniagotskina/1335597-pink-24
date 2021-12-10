@@ -1,0 +1,56 @@
+
+.advantages__slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: @text-slim;
+}
+
+.advantages__list {
+  background-color: @background-grey;
+  position: relative;
+}
+
+.advantages__list::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1172px;
+  height: 116px;
+  background-color: @background-grey;
+  top: 0;
+  left: -290px;
+  transform: translateY(-100%);
+  background-image: linear-gradient(to top left, @background-grey 50%, rgba(255, 0, 0, 0) 1%);
+}
+
+.advantages__list::after {
+  display: block;
+  content: "";
+  width: 157px;
+  height: 320px;
+  background-image: url("/img/screen-advantages.jpg"), url("/img/telephone-crop.png");
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+
+.advantages__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: @title-black;
+}
+
+.advantages__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: @text-slim;
+}
+
+.advantages-fact--hidden {
+  display: none;
+}

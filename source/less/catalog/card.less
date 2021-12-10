@@ -1,0 +1,43 @@
+.card__container-description {
+  background-color: @background-grey;
+}
+
+.card__name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.card__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.card__img-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.card__rating {
+  position: relative;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @red-on-page;
+  margin-left: 48px;
+}
+
+.card__rating::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -25px;
+  background-image: url("/img/heart.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+}
