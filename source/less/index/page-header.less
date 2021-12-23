@@ -1,12 +1,21 @@
+
 .page-header--navigation-close {
-  background-image: url("/img/back-mobile.jpg");
-  background-color: @text-slim;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 66px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
 
 .page-header--navigation-open {
   background-color: @text-slim;
   opacity: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header--navigation-close {
+    height: 110px;
+  }
 }

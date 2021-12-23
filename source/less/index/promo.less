@@ -1,5 +1,6 @@
 
 .promo {
+  width: 320px;
   background-image: url("/img/screen.jpg"), url("/img/phone.png"), url("/img/back-mobile.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center 125px, center 93px, center -66px;
@@ -7,6 +8,8 @@
 }
 
 .promo__slogan {
+  margin: 0;
+  padding-top: 95px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -20,10 +23,69 @@
   margin-top: 320px;
 }
 
+.promo__link-store-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .promo__description {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: @white-on-page;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    width: 660px;
+    background-image: url("/img/screen-tablet.png"), url("/img/phone-tablet.png"), url("/img/back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 370px 182px, center bottom, top center;
+  }
+
+  .promo__slogan {
+    padding-top: 212px;
+    width: 300px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .promo__content-wrapper {
+    background: none;
+    margin-top: 39px;
+    padding-bottom: 119px;
+  }
+
+  .promo__description {
+    display: block;
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    width: 1200px;
+    background-image: url("/img/screen-desktop.png"), url("/img/phone-desktop.png"), url("/img/back-desktop.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 370px 182px, center bottom, top center;
+  }
+
+  .promo__slogan {
+    padding-top: 224px;
+    width: 300px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .promo__content-wrapper {
+    margin-top: 51px;
+    padding-bottom: 130px;
+  }
 }

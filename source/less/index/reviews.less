@@ -2,6 +2,12 @@
   background-color: @white-on-page;
 }
 
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .reviews__name {
   font-weight: bold;
   font-size: 18px;
@@ -20,4 +26,55 @@
   line-height: 30px;
   text-align: center;
   color: @text-slim;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__personal {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: @text-slim;
+  }
+
+  .reviews__text {
+    order: -1;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    position: relative;
+  }
+
+  .reviews::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 600px;
+    width: 79px;
+    height: 63px;
+    background-image: url("/img/quotes.png");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__text {
+    width: 688px;
+  }
+
+  .reviews__list {
+    padding-top: 193px;
+  }
 }

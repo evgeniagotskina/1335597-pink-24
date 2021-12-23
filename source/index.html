@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page-body">
-    <header class="page-header page-header--navigation-close ">
+    <header class="page-header page-header--navigation-close">
         <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-img" src="img/logo-white.svg" width="74" height="23" alt="логотип сайта">
         </a>
@@ -22,7 +23,7 @@
                 <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white"/>
               </svg>
             </button>
-            <ul class="main-navigation__list">
+            <ul class="main-navigation__list main-navigation__list--wrapper">
                 <li class="main-navigation__item">
                     <a class="main-navigation__link">Главная</a>
                 </li>
@@ -81,7 +82,7 @@
         <section class="main-advantages advantages">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-            <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+            <p class="advantages__slogan advantages__slogan--last">Нам есть, что вам предложить!</p>
             <ul class="advantages__list">
                 <li class="advantages__item">
                     <h3 class="advantages__title">Поднимает настроение</h3>
@@ -97,9 +98,11 @@
                 </li>
             </ul>
             <article class="advantages-fact advantages-fact--hidden">
+              <div class="advantages-fact__wrapper">
                 <h3 class="advantages-fact__title">Эффект на 24 часа!</h3>
                 <p class="advantages-fact__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
                 <a class="advantages-fact__link">Узнать больше об исследовании</a>
+              </div>
             </article>
         </section>
         <section class="main-reviews reviews reviews-slider">
@@ -120,28 +123,28 @@
         <section class="main-tariff tariff tariff-slider">
             <table class="tariff-table">
                 <tr class="tariff-table__header">
-                    <td class="tariff-table__header-item tariff-table__header-item--empty"></td>
-                    <td class="tariff-table__header-item"><span>база</span>1,99 USD</td>
-                    <td class="tariff-table__header-item tariff-table__header-item--best"><span>стандарт</span>3,99 USD</td>
-                    <td class="tariff-table__header-item"><span>анлим</span>9,99 USD</td>
+                    <th class="tariff-table__header-item tariff-table__header-item--hidden tariff-table__header-item--empty"></th>
+                    <th class="tariff-table__header-item"><span>база</span><br>1,99 USD</th>
+                    <th class="tariff-table__header-item tariff-table__header-item--best"><span>стандарт</span><br>3,99 USD</th>
+                    <th class="tariff-table__header-item"><span>анлим</span><br>9,99 USD</th>
                 </tr>
                 <tr class="tariff-table__row">
                     <td class="tariff-table__cell tariff-table__cell--empty">Розовый фильтр</td>
-                    <td class="tariff-table__cell tariff-table__cell--on">Розовый фильтр</td>
-                    <td class="tariff-table__cell tariff-table__cell--on">Розовый фильтр</td>
-                    <td class="tariff-table__cell tariff-table__cell--on">Розовый фильтр</td>
+                    <td class="tariff-table__cell tariff-table__cell--pink tariff-table__cell--on"><span class="tariff-table__content">Розовый фильтр</span></td>
+                    <td class="tariff-table__cell tariff-table__cell--pink  tariff-table__cell--on"><span class="tariff-table__content">Розовый фильтр</span></td>
+                    <td class="tariff-table__cell tariff-table__cell--pink  tariff-table__cell--on"><span class="tariff-table__content">Розовый фильтр</span></td>
                 </tr>
                 <tr class="tariff-table__row">
                     <td class="tariff-table__cell tariff-table__cell--empty">Смайлики</td>
-                    <td class="tariff-table__cell tariff-table__cell--off">Смайлики</td>
-                    <td class="tariff-table__cell tariff-table__cell--on">Смайлики</td>
-                    <td class="tariff-table__cell tariff-table__cell--on">Смайлики</td>
+                    <td class="tariff-table__cell tariff-table__cell--smile tariff-table__cell--off"><span class="tariff-table__content">Смайлики</span></td>
+                    <td class="tariff-table__cell tariff-table__cell--smile tariff-table__cell--on"><span class="tariff-table__content">Смайлики</span></td>
+                    <td class="tariff-table__cell tariff-table__cell--smile tariff-table__cell--on"><span class="tariff-table__content">Смайлики</span></td>
                 </tr>
                 <tr class="tariff-table__row">
                     <td class="tariff-table__cell tariff-table__cell--empty">Комментарии</td>
-                    <td class="tariff-table__cell tariff-table__cell--off">Комментарии</td>
-                    <td class="tariff-table__cell tariff-table__cell--off">Комментарии</td>
-                    <td class="tariff-table__cell tariff-table__cell--on">Комментарии</td>
+                    <td class="tariff-table__cell tariff-table__cell--comment tariff-table__cell--off"><span class="tariff-table__content">Комментарии</span></td>
+                    <td class="tariff-table__cell tariff-table__cell--comment tariff-table__cell--off"><span class="tariff-table__content">Комментарии</span></td>
+                    <td class="tariff-table__cell tariff-table__cell--comment tariff-table__cell--on"><span class="tariff-table__content">Комментарии</span></td>
                 </tr>
             </table>
             <p class="tariff__toggles tariff-slider__toggles">
@@ -161,13 +164,13 @@
                     <p class="contacts__caption">Пишите:</p>
                     <a class="contacts__content">mail@htmlacademy.ru</a>
                 </div>
-                <div class="contacts__adress">
+                <div class="contacts__adres">
                     <p class="contacts__caption">Приезжайте в гости:</p>
                     <p class="contacts__content">ул. Большая Конюшенная, 19/8</p>
                 </div>
             </div>
             <map class="contacts__map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716070592!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637995937145!5m2!1sru!2sru" width="320" height="200" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af582e76cb1a923a6e2d3221b6507d6d4b729dc861cc3c8daa27bbef791618cc0&amp;source=constructor" width="100%" height="502" frameborder="0"></iframe>
             </map>
         </section>
     </main>
