@@ -1,6 +1,7 @@
 
 .advantages__slogan {
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 46px;
   font-weight: 300;
   font-size: 24px;
@@ -10,24 +11,31 @@
 }
 
 .advantages__list {
-  margin: 0;
+  position: relative;
+  margin: 0 auto;
   padding: 0;
+  padding-bottom: 325px;
   list-style-type: none;
   background-color: @background-grey;
-  position: relative;
 }
 
 .advantages__list::after {
+  position: absolute;
   display: block;
   content: "";
   width: 157px;
   height: 320px;
-  background-image: url("/img/screen-advantages.jpg"), url("/img/telephone-crop.png");
+  background-image: url("/img/telephone-crop.png");
   background-repeat: no-repeat;
-  background-position: center, center;
+  background-position: center bottom;
+  left: 50%;
+  transform: translate(-78px, 0);
 }
 
 .advantages__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 43px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -36,6 +44,9 @@
 }
 
 .advantages__description {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 24px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -49,6 +60,7 @@
 
 @media (min-width: @tablet-width) {
   .advantages__slogan {
+    width: 588px;
     font-size: 40px;
     line-height: 54px;
   }
@@ -62,6 +74,18 @@
   .advantages__list {
     position: relative;
     margin-top: 122px;
+    padding-bottom: 0;
+  }
+
+  .advantages__title {
+    margin: 0;
+    text-align: left;
+  }
+
+  .advantages__description {
+    width: 310px;
+    text-align: left;
+    margin-bottom: 49px;
   }
 
   .advantages__item {
@@ -71,8 +95,8 @@
 
   .advantages__list::after {
     position: absolute;
-    top: -128px;
-    left: 0;
+    top: -99px;
+    left: 123px;
     display: block;
     content: "";
     width: 268px;

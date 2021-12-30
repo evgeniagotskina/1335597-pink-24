@@ -1,5 +1,11 @@
-.main-navigation {
+
+.main-navigation__toggle {
   position: relative;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation__list {
@@ -49,14 +55,14 @@
 
 .main-navigation__button-close {
   position: absolute;
-  top: -18px;
-  left: 250px;
+  top: -14px;
+  left: -23px;
 }
 
 .main-navigation__button-open {
   position: absolute;
-  top: -18px;
-  left: 250px;
+  top: -14px;
+  left: -50px;
 }
 
 .main-navigation__link {
@@ -75,5 +81,13 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: none;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation .main-navigation__list {
+    display: block;
   }
 }
