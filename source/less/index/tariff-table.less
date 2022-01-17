@@ -1,5 +1,4 @@
 .tariff-table__header {
-  background-color: @text-slim;
   color: @white-on-page;
 }
 
@@ -9,6 +8,7 @@
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+  background-color: @text-slim;
 }
 
 .tariff-table__header-item span {
@@ -16,19 +16,42 @@
   font-size: 16px;
 }
 
-.tariff-table__header-item--empty {
-  background-color: @background-grey;
+.tariff-table .tariff-table__row .tariff-table__cell:nth-child(1) {
+  display: none;
+}
+
+.tariff-table .tariff-table__header .tariff-table__header-item:nth-child(1) {
   display: none;
 }
 
 .tariff-table__cell {
   position: relative;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  padding-left: 20px;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   align-items: center;
   text-transform: uppercase;
+  background-color: @white-on-page;
   color: @text-slim;
+}
+
+.tariff-table__cell--pink {
+  padding-right: 125px;
+}
+
+.tariff-table__cell--pink span {
+  white-space: nowrap;
+}
+
+.tariff-table__cell--smile {
+  padding-right: 175px;
+}
+
+.tariff-table__cell--comment {
+  padding-right: 146px;
 }
 
 .tariff-table__cell--empty {
@@ -38,6 +61,7 @@
 .tariff-table__cell--on::after {
   position: absolute;
   content: "";
+  left: 228px;
   background-image: url("/img/yes.svg");
   background-repeat: no-repeat;
   width: 31px;
@@ -47,8 +71,67 @@
 .tariff-table__cell--off::after {
   position: absolute;
   content: "";
+  left: 230px;
   background-image: url("/img/no.svg");
   background-repeat: no-repeat;
   width: 27px;
   height: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .tariff-table {
+    empty-cells: hide;
+    margin: 0 auto;
+  }
+
+  .tariff-table .tariff-table__row .tariff-table__cell:nth-child(1) {
+    width: 114px;
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+  }
+
+  .tariff-table .tariff-table__header .tariff-table__header-item:nth-child(1) {
+    display: block;
+    background-color: @background-grey;
+  }
+
+  .tariff-table__content {
+    visibility: hidden;
+    text-transform: none;
+  }
+
+  .tariff-table__cell {
+    padding-left: 15px;
+    padding-right: 24px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
+
+  .tariff-table__content--first-column {
+    text-transform: none;
+  }
+
+  .tariff-table__cell--on::after {
+    left: 65px;
+  }
+
+  .tariff-table__cell--off::after {
+    left: 67px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariff-table__content--first-column {
+    font-size: 18px;
+  }
+
+  .tariff-table .tariff-table__row .tariff-table__cell:nth-child(1) {
+    width: 147px;
+    padding-left: 22px;
+    padding-right: 65px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
 }

@@ -33,3 +33,48 @@
   text-align: center;
   color: @red-on-page;
 }
+
+.contacts__container-for-triangle--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__container-for-triangle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("/img/triangle-white-tablet.svg");
+    margin-bottom: -68px;
+  }
+
+  .contacts__address {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .contacts__map {
+    width: 660px;
+    height: 374;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__container-for-triangle {
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url("/img/triangle-white-desktop.svg");
+    margin-bottom: -68px;
+  }
+
+  .contacts__email {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .contacts__address {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}

@@ -1,12 +1,16 @@
 
 .promo {
-  background-image: url("/img/screen.jpg"), url("/img/phone.png"), url("/img/back-mobile.jpg");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: center 125px, center 93px, center -66px;
+  width: 100%;
+  background-image: url("/img/hand-phone.png"), url("/img/back-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 176px, center top;
   background-color: @background-promo;
 }
 
 .promo__slogan {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 95px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -16,14 +20,109 @@
 }
 
 .promo__content-wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: @background-promo;
-  margin-top: 320px;
+  margin-top: 360px;
+}
+
+.promo__link {
+  display: block;
+  max-width: 280px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: @white-on-page;
+  padding: 21px 39px;
+  border: 3px solid @white-on-page;
+  box-sizing: border-box;
+  border-radius: 29px;
+}
+
+.promo__link-store-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .promo__description {
+  width: 280px;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: @white-on-page;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: url("/img/hand-phone-tablet.png"), url("/img/back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, top center;
+    background-color: @background-promo;
+  }
+
+  .promo__container {
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
+  .promo__slogan {
+    padding-top: 212px;
+    width: 300px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+
+  .promo__content-wrapper {
+    background: none;
+    margin-top: 39px;
+    padding-bottom: 119px;
+    margin-left: 20px;
+    margin-right: auto;
+    width: 300px;
+  }
+
+  .promo__description {
+    display: block;
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    background-image: url("/img/screen-desktop.png"), url("/img/phone-desktop.png"), url("/img/back-desktop.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 370px 182px, center bottom, top center;
+    background-color: @background-promo;
+  }
+
+  .promo__slogan {
+    padding-top: 224px;
+    width: 300px;
+    font-size: 50px;
+    line-height: 68px;
+    margin-left: 0;
+  }
+
+  .promo__content-wrapper {
+    margin-top: 51px;
+    padding-bottom: 130px;
+    margin-left: 0;
+  }
+
+  .promo__container {
+    max-width: 1200px;
+    padding-left: 130px;
+    padding-right: 130px;
+    box-sizing: border-box;
+  }
 }
