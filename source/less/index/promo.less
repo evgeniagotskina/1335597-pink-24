@@ -59,11 +59,15 @@
 
 @media (min-width: @tablet-width) {
   .promo {
-    width: 100%;
     background-image: url("/img/hand-phone-tablet.png"), url("/img/back-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: center bottom, top center;
     background-color: @background-promo;
+  }
+
+  .promo__container {
+    max-width: 660px;
+    margin: 0 auto;
   }
 
   .promo__slogan {
@@ -95,10 +99,10 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    width: 1200px;
     background-image: url("/img/screen-desktop.png"), url("/img/phone-desktop.png"), url("/img/back-desktop.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 370px 182px, center bottom, top center;
+    background-color: @background-promo;
   }
 
   .promo__slogan {
@@ -106,10 +110,19 @@
     width: 300px;
     font-size: 50px;
     line-height: 68px;
+    margin-left: 0;
   }
 
   .promo__content-wrapper {
     margin-top: 51px;
     padding-bottom: 130px;
+    margin-left: 0;
+  }
+
+  .promo__container {
+    max-width: 1200px;
+    padding-left: 130px;
+    padding-right: 130px;
+    box-sizing: border-box;
   }
 }

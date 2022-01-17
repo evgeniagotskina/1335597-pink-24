@@ -81,10 +81,11 @@
 @media (min-width: @tablet-width) {
   .tariff-table {
     empty-cells: hide;
+    margin: 0 auto;
   }
 
   .tariff-table .tariff-table__row .tariff-table__cell:nth-child(1) {
-    width: 128px;
+    width: 114px;
     display: block;
     padding-top: 18px;
     padding-bottom: 17px;
@@ -98,5 +99,39 @@
 
   .tariff-table__content {
     visibility: hidden;
+    text-transform: none;
+  }
+
+  .tariff-table__cell {
+    padding-left: 15px;
+    padding-right: 24px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
+
+  .tariff-table__content--first-column {
+    text-transform: none;
+  }
+
+  .tariff-table__cell--on::after {
+    left: 65px;
+  }
+
+  .tariff-table__cell--off::after {
+    left: 67px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariff-table__content--first-column {
+    font-size: 18px;
+  }
+
+  .tariff-table .tariff-table__row .tariff-table__cell:nth-child(1) {
+    width: 147px;
+    padding-left: 22px;
+    padding-right: 65px;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 }
