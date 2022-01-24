@@ -1,3 +1,8 @@
+.form-competition__checkboxes-radio {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .checkboxes-radio {
   background-color: @background-grey;
   border: none;
@@ -18,9 +23,93 @@
   text-align: center;
 }
 
+.checkboxes-radio__label {
+  display: block;
+  position: relative;
+  padding-left: 59px;
+  font-size: 18px;
+  line-height: 30px;
+  color: @text-slim;
+  margin-bottom: 69px;
+}
+
+.checkboxes-radio__label:last-child {
+  margin-bottom: 55px;
+}
+
+.checkboxes-radio__checkmark {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 35px;
+  height: 35px;
+  background: @white-on-page;
+  border: 2px solid @input-grey;
+  border-radius: 1px;
+}
+
+.checkboxes-radio__checkmark--radio {
+  border-radius: 50%;
+}
+
+.checkboxes-radio__input:checked + .checkboxes-radio__checkmark::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 16px;
+  background-image: url(/img/tick.svg);
+}
+
+.checkboxes-radio__input--radio:checked + .checkboxes-radio__checkmark::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: @red-on-page;
+  border-radius: 50%;
+}
+
 .checkboxes-radio__caption {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: @text-slim;
+}
+
+@media (min-width: @tablet-width) {
+  .form-competition__checkboxes-radio {
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 51px;
+  }
+
+  .checkboxes-radio {
+    position: relative;
+    border: 2px solid @input-grey;
+    border-radius: 1px;
+    background-color: @white-on-page;
+  }
+
+  .checkboxes-radio__legend {
+    display: block;
+    position: absolute;
+    width: 374px;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-166px);
+    background-color: @white-on-page;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkboxes-radio__list--checboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

@@ -1,4 +1,15 @@
+.form-competition__button {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .button-form {
+  display: block;
+  margin: 0 auto;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -7,4 +18,10 @@
   border: 2px solid @button-green;
   border-radius: 1px;
   color: @white-on-page;
+}
+
+@media (min-width: @tablet-width) {
+  .button-form {
+    margin: 0;
+  }
 }

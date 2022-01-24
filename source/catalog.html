@@ -9,31 +9,46 @@
 </head>
 
 <body class="page-body">
-    <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-img" src="img/logo-white.svg" width="74" height="23" alt="логотип сайта">
-        </a>
-        <nav class="main-navigation page-header__navigation">
-            <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-navigation__list">
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link">Главная</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="catalog.html">Фотографии</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="">Конкурс</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="htmlacademy.ru">Html academy</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <header class="page-header page-header--navigation-open">
+
+    <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-glasses" src="img/glasses.svg" width="59" height="40" alt="очки">
+        <img class="page-header__logo-img" src="img/logo-white.svg" width="74" height="23" alt="логотип сайта">
+        <img class="page-header__logo-desktop" src="img/logotype-white-desktop.svg" width="147" height="40" alt="логотип">
+    </a>
+    <nav class="main-navigation page-header__navigation  main-navigation--open ">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          <svg class="main-navigation__button-open" width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z" fill="white"/>
+          </svg>
+          <svg class="main-navigation__button-close" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white"/>
+            <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white"/>
+          </svg>
+        </button>
+        <ul class="main-navigation__list main-navigation__list--wrapper">
+            <li class="main-navigation__item">
+                <a class="main-navigation__link">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+                <a class="main-navigation__link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-navigation__item">
+                <a class="main-navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-navigation__item">
+                <a class="main-navigation__link" href="htmlacademy.ru">Html academy</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
     <main class="main-catalog">
+      <div class="main-catalog__text--wrapper">
         <h1 class="main-catalog__title">Фотографии пользователей</h1>
+      </div>
         <p class="main-catalog__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
         <section class="main-catalog__best-photo best-photo">
             <h2 class="best-photo__title">Панорама дня</h2>
             <a class="best-photo__link" href="">
@@ -53,8 +68,10 @@
                     <img class="card__photo" src="img/catalog-photo/photo-1-mobile.jpg" width="280" height="180" alt="машина">
                 </a>
                 <div class="card__container-description">
+                  <div>
                     <span class="card__name">Левон</span>
                     <span class="card__time">(5 часов назад)</span>
+                    </div>
                     <p class="card__img-description">Вчера он на луну летал, сегодня в руки к нам попал..</p>
                     <span class="card__rating">Нравится: 356</span>
                 </div>
@@ -64,8 +81,10 @@
                     <img class="card__photo" src="img/catalog-photo/photo-2-mobile.jpg" width="280" height="180" alt="барабанная установка">
                 </a>
                 <div class="card__container-description">
+                  <div>
                     <span class="card__name">Антон</span>
                     <span class="card__time">(12 часов назад)</span>
+                    </div>
                     <p class="card__img-description">Соседи будут рады!.</p>
                     <span class="card__rating">Нравится: 666</span>
                 </div>
@@ -75,8 +94,10 @@
                     <img class="card__photo" src="img/catalog-photo/photo-3-mobile.jpg" width="280" height="180" alt="окна">
                 </a>
                 <div class="card__container-description">
+                  <div>
                     <span class="card__name">Борис</span>
                     <span class="card__time">(20 часов назад)</span>
+                    </div>
                     <p class="card__img-description">Здесь могла быть ваша цитата о высоком и вечном..</p>
                     <span class="card__rating">Нравится: 215</span>
                 </div>
@@ -86,8 +107,10 @@
                     <img class="card__photo" src="img/catalog-photo/photo-4-mobile.jpg" width="280" height="180" alt="кубанская бахча">
                 </a>
                 <div class="card__container-description">
+                  <div>
                     <span class="card__name">Сергей</span>
                     <span class="card__time">(25 часов назад)</span>
+                    </div>
                     <p class="card__img-description">Самая кубанская в мире!</p>
                     <span class="card__rating">Нравится: 4</span>
                 </div>
@@ -97,8 +120,10 @@
                     <img class="card__photo" src="img/catalog-photo/photo-5-mobile.jpg" width="280" height="180" alt="ноги">
                 </a>
                 <div class="card__container-description">
+                  <div>
                     <span class="card__name">Максим</span>
                     <span class="card__time">(40 часов назад)</span>
+                    </div>
                     <p class="card__img-description">Где снег-то?</p>
                     <span class="card__rating">Нравится: 150</span>
                 </div>
@@ -108,8 +133,10 @@
                     <img class="card__photo" src="img/catalog-photo/photo-6-mobile.jpg" width="280" height="180" alt="крыло самолета">
                 </a>
                 <div class="card__container-description">
+                  <div>
                     <span class="card__name">Надежда</span>
                     <span class="card__time">(45 часов назад)</span>
+                    </div>
                     <p class="card__img-description">Всем GM и взаимные лайки!</p>
                     <span class="card__rating">Нравится: 2560</span>
                 </div>
@@ -117,7 +144,8 @@
         </section>
         <section class="main-catalog__upload upload">
             <h2 class="visually-hidden">блок загрузки и редактирования фото</h2>
-            <p class="upload__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            <p class="upload__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+            <div class="upload__wrapper-for-form">
             <div class="upload__example-photo"></div>
             <form class="upload__form" method="post" action="echo.htmlacademy.ru">
                 <fieldset class="upload__container">
@@ -125,8 +153,8 @@
                     <div class="upload__item">
                         <label class="upload__label" id="frame"><span class="visually-hidden">размер</span>
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#D22856"/>
-                    </svg></label>
+                          <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#D22856"/>
+                        </svg></label>
                         <input class="upload__input upload__input--frame" type="range" name="frame">
                     </div>
                     <div class="upload__item">
@@ -149,9 +177,12 @@
                         <input class="upload__input upload__input--contrast" type="range" name="contrast">
                     </div>
                 </fieldset>
+                <div class="upload__button-container">
                 <button type="submit" class="upload__button upload__button--post">Запостить</button>
                 <button type="reset" class="upload__button upload__button--reset">Отмена</button>
+              </div>
             </form>
+            </div>
         </section>
     </main>
     <footer class="page-footer footer footer-wrapper">

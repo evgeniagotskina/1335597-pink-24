@@ -1,11 +1,20 @@
 .card__container-description {
   background-color: @background-grey;
+  width: 280px;
+  padding-left: 17px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .card__name {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+}
+
+.card__photo {
+  margin: 0 auto;
+  display: block;
 }
 
 .card__time {
@@ -17,6 +26,8 @@
 
 .card__img-description {
   font-weight: normal;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
 }
@@ -40,4 +51,18 @@
   background-repeat: no-repeat;
   width: 13px;
   height: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .card__container-description {
+    height: 155px;
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__img-description {
+    flex-grow: 1;
+  }
 }
