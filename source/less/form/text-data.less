@@ -1,3 +1,8 @@
+.form-competition__data {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .text-data {
   border: none;
 }
@@ -9,6 +14,7 @@
 }
 
 .text-data__label {
+  margin-bottom: 17px;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
@@ -17,8 +23,111 @@
 }
 
 .text-data__input {
+  padding-left: 20px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: @text-slim;
+  border: 2px solid @input-grey;
+  border-radius: 1px;
+  margin-bottom: 29px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-data__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-data__legend {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form-competition__data {
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 51px;
+  }
+
+  .text-data__item {
+    flex-direction: row;
+  }
+
+  .text-data__item--contacts-date {
+    flex-direction: column-reverse;
+  }
+
+  .text-data__list--contacts-date {
+    margin-top: 46px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .text-data__input {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  .text-data__input--contacts-date {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .text-data__input-for-icon {
+    position: relative;
+  }
+
+  .text-data__item--contacts-date:first-child .text-data__input-for-icon::before {
+    position: absolute;
+    content: "";
+    width: 59px;
+    height: 59px;
+    top: 0;
+    right: 0;
+    background-image: url("/img/phone-icon.svg");
+  }
+
+  .text-data__item--contacts-date:last-child .text-data__input-for-icon::before {
+    position: absolute;
+    content: "";
+    width: 59px;
+    height: 59px;
+    top: 0;
+    right: 0;
+    background-image: url("/img/mail-icon.svg");
+  }
+
+  .text-data__legend {
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-122px);
+    background-color: @white-on-page;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @red-on-page;
+    text-align: center;
+  }
+
+  .text-data--contacts-date {
+    position: relative;
+    border: 2px solid @input-grey;
+    border-radius: 1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-data__list--contacts-date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

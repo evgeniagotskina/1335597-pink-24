@@ -1,18 +1,75 @@
 .main-form__slogan {
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 228px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
   color: @white-on-page;
+}
+
+.main-form__slogan-wrapper {
+  width: 100%;
+  background-color: @background-promo;
   background-image: url("/img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center -66px;
+  background-position: center top;
 }
 
 .main-form__appeal {
+  width: 280px;
+  margin: 0 auto;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: @text-slim;
+}
+
+.main-form__appeal-more {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-form__slogan-wrapper {
+    background-image: url("/img/back-tablet.jpg");
+  }
+
+  .main-form__slogan {
+    padding-top: 190px;
+    width: 600px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .main-form__appeal {
+    width: 490px;
+    font-size: 18px;
+  }
+
+  .main-form__appeal-more {
+    display: inline;
+    width: 490px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: @text-slim;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-form__slogan-wrapper {
+    background-image: url("/img/back-desktop.jpg");
+  }
+
+  .main-form__slogan {
+    width: 747px;
+  }
+
+  .main-form__appeal {
+    width: 756px;
+  }
 }

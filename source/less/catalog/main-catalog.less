@@ -1,18 +1,62 @@
 .main-catalog__title {
+  padding-top: 102px;
+  padding-bottom: 84px;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
   color: @white-on-page;
+  width: 172px;
+}
+
+.main-catalog__text--wrapper {
+  width: 100%;
+  background-color: @background-promo;
   background-image: url("/img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center -66px;
+  background-position: center top;
 }
 
 .main-catalog__text {
+  width: 253px;
+  margin: 0 auto;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: @text-slim;
+}
+
+@media (min-width: @tablet-width) {
+  .main-catalog__title {
+    padding-top: 190px;
+    width: 360px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .main-catalog__text--wrapper {
+    background-image: url("/img/back-tablet.jpg");
+  }
+
+  .main-catalog__text {
+    width: 500px;
+    font-size: 18px;
+  }
+
+  .main-catalog__upload {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog__text--wrapper {
+    background-image: url("/img/back-desktop.jpg");
+  }
+
+  .main-catalog__text {
+    width: 572px;
+  }
 }
